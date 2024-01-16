@@ -1,0 +1,61 @@
+div{
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.container-1{
+    border: 2px dashed red;
+    position: relative; /* 이렇게 기준을 잡아줘야지, position:absolute 준 요소가 top bottom left right 방향으로 움직일 수 있는 것이다.*/
+}
+
+.first{
+    width: 300px;
+    height: 300px;
+    background-color: yellow;
+}
+.second{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+
+}
+.third{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+.container-2{
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    position: relative;
+}
+
+#center{
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    position: absolute;
+    /* position: absolute 에서, 자동 중앙정렬에 대하여 */
+    /* position: absolute 와 margin: auto 결합 */
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+    
+}
+
+.fixed-area{
+    width: 120px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}

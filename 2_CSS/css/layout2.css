@@ -1,0 +1,118 @@
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: skyblue;
+}
+
+/* content 영역 */
+.content{
+    width:150px;
+    height:150px;
+    /* 
+        width/height 속성은
+        기본적으로 content 영역의 
+        크기를 지정하는 속성
+    */   
+}
+
+/* border 영역 */
+.border{
+    border: 10px solid red;
+}
+
+/* padding 영역 */
+.padding{
+    padding: 30px;
+}
+
+/* margin 영역 */
+.margin{
+    margin: 50px;
+}
+
+/*  
+위의 요소도 50px 마진바텀 주고, 아래요소도 50px 마진탑 줬을 때
+두 요소 사이의 간격이 100px 떨어지지 않고, 50px 떨어진 채로 있게 된다.
+한편, 서로 다른 요소의 margin 이 겹칠 경우,
+더 큰 margin 을 가진 요소의 값을 따른다. 
+*/
+
+#m1{
+    margin: 100px;
+}
+
+.padding-test{
+    /* padding-top: 20px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 100px; */
+
+    /* padding 속성 :
+        작성법에 따라서 padding 특정 방향에 
+        크기를 지정할 수 있다.
+    */
+
+    /* 값 1개 : 상하좌우 
+    padding: 30px;*/
+
+    /* 값 2개 : 앞 값이 상하, 뒷 값이 좌우 
+    padding: 50px 100px; */
+
+    /* 값 3개 : 상, 좌우, 하 
+    padding: 10px 50px 100px; */
+
+    /* 값 4개 : 상 우 하 좌 */
+    padding: 10px 20px 30px 40px;
+    
+}
+
+/* border (속성이 조금 다름)  */
+.border-test{
+    border-top: 3px solid black;
+    border-bottom: 5px dashed magenta;
+    border-left: 10px dotted blue;
+    border-right: 10px double orange;
+}
+
+/* margin 은 padding 에서 했던 것과 동일하게 사용할 수 있다. */
+
+.box-container{
+    border: 2px solid black;
+    width: 500px;
+    height: 300px;
+}
+.margin-auto{
+    /* 마진 상하좌우 중에, 좌우마진을 동일하게 해줌. 
+        -> 근데, margin-auto 썻더니 margin-top을 무시하게 되었다.
+        왜? margin 속성 자체가 상하좌우를 동시에 지정하는 속성이라,
+            상(top) 부분에도 auto 가 지정되어 이전 100px 덮어쓰기함.
+        그렇다면, 어떻게 하면 상하좌우 마진값을 동일하게 해줄 수 있을까?
+        margin: auto; 다음에 margin-top: 100px; 이 오면 된다.
+        왜냐하면, 아래에 있을수록 높은 순위잖아.
+    */
+    margin: auto;
+    margin-top:100px;
+    /* margin-left:200px;  */
+}
+
+#box-sizing{
+    /* 
+    테두리(border) 10px, 패딩 20px, 내용 나머지
+    전체 요소 크기가 가로/세로 300px 인
+    정사각형 만들기
+    */
+
+    border: 10px solid black;
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+
+    box-sizing: border-box; 
+    /* 이렇게 쓰면, content + padding + border 합쳐서 width hegiht 크기를 만들어줌 */
+    
+
+     
+
+}
+
+
