@@ -1,16 +1,19 @@
 /* :only-child */
 /* 만약에, #test1 자식이 하나가 아니라 2개면? css안먹힘(검증해봄) */
+/* 쓸일 없을듯 */
 #test1 > p:only-child{
     background-color: steelblue;
 }
 
 /* only-of-type */
+/* 쓸일 없을듯 */
 #test2 > p:only-of-type{
     background-color: red;
 }
 
 /* :empty */
 /* #test3의 자식 중 p 태그 중에 자식요소가 없는 걸 선택 */
+/* 쓸일 없을듯 */
 #test3 > p:empty {
     background-color: greenyellow;
     height: 30px;
@@ -22,16 +25,20 @@
 }
 
 /* 특정 요소 내부에 있는 특정 클래스만 선택하기 */
+/* 중요 근데, 너무 당연하지.*/
 #test5-1 > .c5 {
     background-color: chartreuse;
 }
 
-/* #test5-2의 자식 중 클래스가 c5인 li요소만 선택 */
+/* #test5-2의 자식 중 li 들 중에 클래스가 c5인 것만 선택하기 */
+/* li와 .c5 간에 간격이 없어야 동작함. */
+/* 중요 */
 #test5-2 > li.c5{
     background-color: tomato;
 }
 
 /* 클래스가 여러개인 요소만 선택. 붙여서 써야함. */
+/* 중요 */
 .test6.c6{
     background-color: red;
 }

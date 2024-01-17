@@ -1,0 +1,110 @@
+body{
+    height: 10000px;
+}
+
+img{
+    width: 250px;
+}
+/* transfrom : 변형과 관련된 속성 */
+
+/* 
+css 속성 작성 시 크로스 브라우저(브라우저가 달라지는 경우) 처리 방법
+-ms- : 마이크로 소프트 (익스플로어, 엣지)
+-webkit- : 크롬, 사파리
+-o- : 오페라
+-moz- : 파이어폭스
+*/
+
+/* 좌우 이동 */
+.trans-x-2d:hover{ /*마우스 올렸을 때*/
+    transform: translateX(100px); /*이렇게 써줘도 왠만하면 됨.*/
+    /* 근데, 정확히는 아래처럼 해줘야함. 
+    -webkit-transform: translateX(100px); */
+}
+/* 상하 이동 */ /*y축은 양수가 "아래"로, 음수가 "위"로.*/
+.trans-y-2d:hover{
+    transform: translateY(100px);
+}
+/* 대각선 이동 */
+.trans-xy-2d:hover{
+    transform: translate(100px, -100px); /*첫번째가 x축, 두번째가 y축이겠지. 당연히*/
+}
+/* scale(배율) */
+/* 가로방향 확대/축소 */ /*이게 뭔소리냐면, 사진의 가로만 무리하게 쭉 늘어남.*/
+.trans-x-scale-2d:hover{
+    transform: scaleX(2);
+    margin-left: 200px;
+}
+/* 세로방향 확대/축소 */
+.trans-y-scale-2d:hover{
+    transform:scaleY(2);
+}
+/* 대각선 방향 확대/축소 */
+.trans-xy-scale-2d:hover{
+    transform: scale(2);
+    margin: 150px 150px;
+    transition: 1s;
+}
+/* 그림 돌려돌려 돌림판 */
+.trans-rotate:hover{
+    transform: rotate(180deg);
+}
+/* x, y, z 축 이동 */
+.trans-3d:hover{
+    /* perspective 는 z축 길이를 지정해주는 것이다. 원근법 적용 */
+    transform: perspective(300px) translate3d(50px, 50px, 100px);
+}
+
+.trans-rotate-x-3d:hover{
+    transform: perspective(300px) rotateX(45deg); /*이렇게 했더니 액자에 걸려진 그림이라 본다면, 위쪽을 누가 밀어낸 효과가 나더라.*/
+    transition: 1s;
+}
+
+.trans-rotate-y-3d:hover{
+    transform: perspective(300px) rotateY(45deg); /*이렇게 했더니 액자에 걸려진 그림이라 본다면, 오른쪽을 누가 밀어낸 효과가 나더라.*/
+}
+.trans-rotate-z-3d:hover{
+    transform: perspective(300px) rotateZ(45deg);
+}
+
+/* transition */
+
+.box{
+    width: 150px;
+    height:150px;
+    background-color: red;
+    border: 1px solid black;
+}
+.test1:hover{
+    background-color: yellow;
+    transition-duration: 1s;
+}
+.test2:hover{
+    background-color: skyblue;
+    transform: rotate(180deg);
+    
+
+    border-radius: 50%;
+}
+.test2{
+    transition-duration: 3s; 
+    /*마우스를 올렸을 때 뿐만 아니라, 
+    내렸을 때에도 천천히 바뀌도록 하고 싶다면, 
+    이처럼 hover가 아닌 곳에다가 transition을 줘야한다.*/
+}
+.test3{
+    transition-duration: 3s;
+    transition-timing-function:ease-in-out;
+}
+.test3:hover{
+    background-color: springgreen;
+    transform: rotate(720deg);
+
+}
+/* 스타일 변형 딜레이 */
+.test4:hover{
+    transform: translateY(100px);
+}
+.test4{
+    transition-delay: 2s;
+}
