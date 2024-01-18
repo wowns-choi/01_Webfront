@@ -1,98 +1,107 @@
-header{
+body {
+    margin: 0;
+}
+
+header {
     display: flex;
     height: 7vh;
 }
-header > div:nth-child(1){
+
+header>div:nth-child(1) {
     flex-basis: 10%;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
-header > div:nth-child(2){
+header>div:nth-child(2) {
     flex-basis: 80%;
-    display:flex;
-    align-items:center;
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
-#abc{
+
+#abc {
     border: 1px solid gray;
     border-radius: 30px;
     height: 4vh;
     width: 25vw;
-    padding-left:20px;
-    display:flex;
+    padding-left: 20px;
+    display: flex;
     justify-content: flex-start;
     align-items: center;
     overflow: hidden;
 }
 
 
-#search-input{
+#search-input {
     border: none;
     width: 80%;
-    height:2vh;
+    height: 2vh;
     outline: none;
 }
-#abc img {  
+
+#abc img {
     margin-right: 5px;
-    width:6%;
-    
+    width: 6%;
+
 }
 
-.search-btn{
+.search-btn {
     height: 5vh;
     width: 14%;
-    border-left:1px solid #f2f2f2;
-    border-right:none;
+    border-left: 1px solid #f2f2f2;
+    border-right: none;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.search-btn:hover{
+
+.search-btn:hover {
     background-color: #dbdbdb;
 }
-.fa-magnifying-glass{
+
+.fa-magnifying-glass {
     font-size: 15px;
 }
 
-.fa-microphone{
+.fa-microphone {
     margin-left: 20px;
     font-size: 20px;
-    background-color:  #e8e8e8;
+    background-color: #e8e8e8;
     border: 10px solid #e8e8e8;
     border-radius: 50px;
 }
 
-input[type="reset"]{
+input[type="reset"] {
     font-size: 30px;
     background-color: red;
     border: none;
 }
-header > div:nth-child(3){
+
+header>div:nth-child(3) {
     flex-basis: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
-#login-btn{
+
+#login-btn {
     background-color: white;
     border-radius: 30px;
     border: 1px solid #e8e8e8;
     display: flex;
     justify-content: center;
-    align-items:center;
-    width:55%;
+    align-items: center;
+    width: 55%;
     height: 60%;
 }
-#login-btn:hover{
+
+#login-btn:hover {
     background-color: #ebf9ff;
 }
 
-#login-btn-image{
+#login-btn-image {
     overflow: hidden;
 }
-
-
-

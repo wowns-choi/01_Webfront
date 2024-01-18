@@ -1,54 +1,204 @@
-#main-container{
+#main-container {
     height: 100vh;
     width: 100vw;
     background-color: red;
     display: flex;
     justify-content: center;
 }
-.left1-area{
-    flex-basis: 4%;
+
+.left1-area {
+    flex-basis: 2%;
     background-color: aqua;
 }
-.left2-area{
-    flex-basis: 68%;
+
+.left2-area {
+    flex-basis: 60%;
     background-color: green;
-    display:flex;
+    display: flex;
     flex-direction: column;
 }
-.left2-area > iframe{
-    width:100%;
-    height:70%;
+
+.left2-area>iframe {
+    width: 100%;
+    height: 60%;
     border-radius: 15px;
-    margin-top:3vh;
+    margin-top: 3vh;
 }
-.left2-area>h3{
-    display:flex;
+
+.left2-area>h3 {
+    display: flex;
     justify-content: flex-start;
     background-color: blue;
     margin: 4px;
 }
-.right1-area{
-    flex-basis: 23%;
-    background-color: blue;
-}
-.right2-area{
-    flex-basis: 5%;
-    background-color: black;
-}
-.left-area{
-    height:7vh;
-    background-color: black;
-    display:flex;
-    color:white;
-    align-items: baseline;
-    justify-content: flex-start;
-}
-#owner-div img{
-    width: 50px;
-    height: 50px;
-    border-radius: 20px;
-}
-.left-area > button {
-    border-radius: 50%;
+
+#owner-div {
+    display: flex;
+
 }
 
+
+
+.left-area {
+    flex-basis: 50%;
+    height: 8vh;
+    background-color: greenyellow;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 1vh;
+
+}
+
+#owner-div img {
+    width: 2.5vw;
+    height: 4.5vh;
+    border-radius: 50%;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.left-area>div:nth-child(2) {
+    font-size: 12px;
+}
+
+.left-area>button:nth-child(3) {
+    margin-left: 1vw;
+    width: 4vw;
+    height: 2.5vw;
+    border: none;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    font-size: 13px;
+
+}
+
+.right-area {
+    flex-basis: 50%;
+    background-color: red;
+    display: flex;
+    align-items: center;
+}
+
+.right-area>button:nth-child(1) {
+    width: 7vw;
+    height: 4.5vh;
+    border: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #e8e8e8;
+    margin: 0;
+    padding: 0;
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+
+
+
+
+
+.right-area>button:nth-child(1):hover {
+    background-color: #cfcfcf;
+}
+
+.right-area>button:nth-child(1):active {
+    background-color: #a6a6a6;
+}
+
+
+.right-area>button:nth-child(2) {
+    width: 3vw;
+    height: 4.5vh;
+    background-color: #e8e8e8;
+    border: none;
+    margin: 0;
+    padding: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+
+.right-area>button:nth-child(2):hover {
+    background-color: #cfcfcf;
+}
+
+.right-area>button:nth-child(2):active {
+    background-color: #a6a6a6;
+}
+
+.right-area>button:nth-child(2)>div:nth-child(1) {
+    border-left: 1px solid black;
+}
+
+.right-area>button:nth-child(3),
+.right-area>button:nth-child(4),
+.right-area>button:nth-child(5) {
+    width: 5vw;
+    height: 4.5vh;
+    background-color: #e8e8e8;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transitioin: 0.3s;
+}
+
+
+.right-area>button:nth-child(3):hover {
+    background-color: #cfcfcf;
+}
+
+.right-area>button:nth-child(3):active {
+    background-color: #a6a6a6;
+}
+
+.right-area>button:nth-child(4):hover {
+    background-color: #cfcfcf;
+}
+
+.right-area>button:nth-child(4):active {
+    background-color: #a6a6a6;
+}
+
+.right-area>button:nth-child(5):hover {
+    background-color: #cfcfcf;
+}
+
+.right-area>button:nth-child(5):active {
+    background-color: #a6a6a6;
+}
+
+.right-area>button:nth-child(6) {
+    width: 2.5vw;
+    height: 4vh;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.right-area>button:nth-child(6):hover {
+    background-color: #cfcfcf;
+}
+
+.right-area>button:nth-child(6):active {
+    background-color: #a6a6a6;
+}
+
+
+
+
+
+
+.right1-area {
+    flex-basis: 36%;
+    background-color: blue;
+}
+
+.right2-area {
+    flex-basis: 2%;
+    background-color: black;
+}
