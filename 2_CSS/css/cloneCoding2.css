@@ -1,19 +1,19 @@
 #main-container {
     height: 100vh;
     width: 100vw;
-    background-color: red;
+    /* background-color: red; */
     display: flex;
     justify-content: center;
 }
 
 .left1-area {
     flex-basis: 4%;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 .left2-area {
     flex-basis: 67%;
-    background-color: green;
+    /* background-color: green; */
     display: flex;
     flex-direction: column;
 }
@@ -28,7 +28,7 @@
 .left2-area>h3 {
     display: flex;
     justify-content: flex-start;
-    background-color: blue;
+    /* background-color: blue; */
     margin: 4px;
 }
 
@@ -41,7 +41,7 @@
 
 .left-area {
     flex-basis: 22%;
-    background-color: greenyellow;
+    /* background-color: greenyellow; */
     display: flex;
     color: white;
     align-items: center;
@@ -83,12 +83,12 @@
 
 .middle-area {
     flex-basis: 49%;
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 
 .right-area {
     flex-basis: 29%;
-    background-color: red;
+    /* background-color: red; */
     display: flex;
     align-items: center;
 
@@ -100,7 +100,7 @@
     border: none;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    background-color: #e8e8e8;
+    /* background-color: #e8e8e8; */
     margin: 0;
     padding: 0;
     transition: 0.3s;
@@ -114,18 +114,18 @@
 
 
 .right-area>button:nth-child(1):hover {
-    background-color: #cfcfcf;
+    /* background-color: #cfcfcf; */
 }
 
 .right-area>button:nth-child(1):active {
-    background-color: #a6a6a6;
+    /* background-color: #a6a6a6; */
 }
 
 
 .right-area>button:nth-child(2) {
     width: 2vw;
     height: 4.5vh;
-    background-color: #e8e8e8;
+    /* background-color: #e8e8e8; */
     border: none;
     margin: 0;
     padding: 0;
@@ -137,11 +137,11 @@
 }
 
 .right-area>button:nth-child(2):hover {
-    background-color: #cfcfcf;
+    /* background-color: #cfcfcf; */
 }
 
 .right-area>button:nth-child(2):active {
-    background-color: #a6a6a6;
+    /* background-color: #a6a6a6; */
 }
 
 .right-area>button:nth-child(2)>div:nth-child(1) {
@@ -153,7 +153,7 @@
 .right-area>button:nth-child(5) {
     width: 3vw;
     height: 4.5vh;
-    background-color: #e8e8e8;
+    /* background-color: #e8e8e8; */
     border: none;
     border-radius: 20px;
     cursor: pointer;
@@ -163,27 +163,27 @@
 
 
 .right-area>button:nth-child(3):hover {
-    background-color: #cfcfcf;
+    /* background-color: #cfcfcf; */
 }
 
 .right-area>button:nth-child(3):active {
-    background-color: #a6a6a6;
+    /* background-color: #a6a6a6; */
 }
 
 .right-area>button:nth-child(4):hover {
-    background-color: #cfcfcf;
+    /* background-color: #cfcfcf; */
 }
 
 .right-area>button:nth-child(4):active {
-    background-color: #a6a6a6;
+    /* background-color: #a6a6a6; */
 }
 
 .right-area>button:nth-child(5):hover {
-    background-color: #cfcfcf;
+    /* background-color: #cfcfcf; */
 }
 
 .right-area>button:nth-child(5):active {
-    background-color: #a6a6a6;
+    /* background-color: #a6a6a6; */
 }
 
 .right-area>button:nth-child(6) {
@@ -196,18 +196,18 @@
 }
 
 .right-area>button:nth-child(6):hover {
-    background-color: #cfcfcf;
+    /* background-color: #cfcfcf; */
 }
 
 .right-area>button:nth-child(6):active {
-    background-color: #a6a6a6;
+    /* background-color: #a6a6a6; */
 }
 
 
 .gray-button {
     width: 100%;
     height: 12vh;
-    background-color: #f0f0f0;
+    /* background-color: #f0f0f0; */
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -216,11 +216,11 @@
 }
 
 .gray-button:hover {
-    background-color: #cfcfcf;
+    /* background-color: #cfcfcf; */
 }
 
 .gray-button:active {
-    background-color: #a6a6a6;
+    /* background-color: #a6a6a6; */
 }
 
 .gray-button>div:nth-child(1) {
@@ -239,7 +239,7 @@
 
 .right1-area {
     flex-basis: 27%;
-    background-color: blue;
+    /* background-color: blue; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -249,7 +249,7 @@
 .chating-re-see {
     width: 95%;
     height: 5vh;
-    background-color: white;
+    /* background-color: white; */
 
     border: 1px solid #f2f2f2;
     border-radius: 30px;
@@ -259,11 +259,11 @@
 }
 
 .chating-re-see:hover {
-    background-color: #dbdbdb;
+    /* background-color: #dbdbdb; */
 }
 
 .chating-re-see:active {
-    background-color: #a6a6a6;
+    /* background-color: #a6a6a6; */
 }
 
 .occupy-space-div {
@@ -272,7 +272,7 @@
 }
 
 .div-1 {
-    background-color: red;
+    /* background-color: red; */
     width: 100%;
     height: 13vh;
     display: flex;
@@ -281,12 +281,12 @@
 
 .div-1-1 {
     flex-basis: 5%;
-    background-color: white;
+    /* background-color: white; */
 }
 
 .div-1-2 {
     flex-basis: 40%;
-    background-color: green;
+    /* background-color: green; */
     display: flex;
     align-items: center;
 }
@@ -298,7 +298,7 @@
 
 .div-1-3 {
     flex-basis: 55%;
-    background-color: purple;
+    /* background-color: purple; */
 }
 
 .div-1-3 div {
@@ -329,7 +329,7 @@
 
 .right2-area {
     flex-basis: 2%;
-    background-color: black;
+    /* background-color: black; */
 }
 
 .main-container2 {
@@ -341,12 +341,12 @@
 
 .first {
     flex-basis: 4%;
-    background-color: red;
+    /* background-color: red; */
 }
 
 .second {
     flex-basis: 67%;
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 
 #comment-count {
@@ -364,12 +364,12 @@
 
 
 .third {
-    background-color: purple;
+    /* background-color: purple; */
     flex-basis: 27%;
 }
 
 .fourth {
-    background-color: black;
+    /* background-color: black; */
     flex-basis: 2%;
 }
 
@@ -379,7 +379,7 @@
 
 #comment-writing>div:nth-child(1) {
     margin-left: 0.1vw;
-    background-color: #aec7e8;
+    /* background-color: #aec7e8; */
     font-size: 25px;
     flex-basis: 2.5%;
     text-align: center;
@@ -406,14 +406,14 @@
 }
 
 #first-comment {
-    background-color: aqua;
+    /* background-color: aqua; */
     display: flex;
     height: 27vh;
 }
 
 .first-user-picture {
     flex-basis: 5%;
-    background-color: red;
+    /* background-color: red; */
     display: flex;
     /* align-items: center; */
     justify-content: flex-start;
@@ -422,7 +422,7 @@
 
 .first-user-writing {
     flex-basis: 95%;
-    background-color: blue;
+    /* background-color: blue; */
     padding-left: 2px;
 
 }
@@ -440,7 +440,7 @@
 }
 
 #owner-id-btn {
-    background-color: gray;
+    /* background-color: gray; */
     border: none;
     border-radius: 20px;
     color: white;
@@ -456,7 +456,7 @@
 
 .gachu-bichu {
     display: flex;
-    background-color: #006eef;
+    /* background-color: #006eef; */
     margin-top: 1vh;
 }
 
