@@ -96,14 +96,22 @@ console.log(count); //102
     console.log("--------------");
     let a = 10;
     let b = 5;
-    let c = ++a * b--;
-    console.log(a,b,c);
+    let c = ++a * b--; //일단, a는 11이되고, b는 5인채로 계산.
+    //그 다음에, c가 55로 확정되고 나서, b가 4로 확정됨.
 
     //최종적으로 a,b,c 에 저장된 값은 얼마?
-
-    // a=10
-    // b=5
+    // a=11
+    // b=4
     // c= 55
 
 
+}
+
+const userName = document.getElementById('userName');
+const userAge = document.getElementById('userAge');
+const userGender = document.getElementById('userGender');
+
+function printJSObject(){    
+    const user = {"이름":userName.value,"나이":userAge.value,"성별":userGender.value};
+    console.log(user);
 }
