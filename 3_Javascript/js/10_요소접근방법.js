@@ -5,13 +5,20 @@ function classTest(){
     console.log(divs);
     //유사배열이란? 
     //배열처럼 index, length 를 가지고 있으나, 
-    //배열전용 기능(메서드)제공하지 않음.
+    //배열전용 기능(메서드)제공하지 않음. 
+    //여기서, 가장 중요한 포인트는, 선택자 중에 s붙은 선택자로 선택한 경우, 선택한 요소들을 하나의 배열 안에 담는다는 것이다.
+    //배열안에 담기면 어떻게 되? 배열에 담긴 요소들을 대상으로 for문을 돌릴 수 있게 됨.
     //여기서, 배열전용 기능(메서드) 란? pop(), push() 같은 메서드를 말함.
  
     divs[0].style.backgroundColor = "rgb(114,203,80)";
     divs[1].style.backgroundColor = "red";
     divs[2].style.backgroundColor = "blue";
+
 }
+
+
+
+
 
 //태그명으로 요소 접근하기
 function tagNameTest(){
@@ -56,7 +63,7 @@ function nameTest(){
     }
 
     //#name-div 요소에 내용으로 결과 출력
-    document.getElementsById("name-div").innerHTML
+    document.getElementById("name-div").innerHTML
     = `${str} <br><br> 선택된 취미 개수 : ${count}`;
 }
 
@@ -92,7 +99,7 @@ function cssTest(){
 
     for(let i=0; i<divList.length; i++){
         divList[i].onclick = function(){
-            alert(`${i}번째 요소 입니다!`);
+            alert(`${i+1}번째 요소 입니다!`);
         }
     }
 }

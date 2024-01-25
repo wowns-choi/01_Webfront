@@ -20,7 +20,7 @@
   </pre>
 
 
-  document.getElement ById("id속성값");
+  document.getElementById("id속성값");
   document.getElementsByClassName("class속성값");
 
 
@@ -31,7 +31,7 @@
 
 
   <pre>
-    1. id로 접근하기 : document.getElementById("id속성값");
+    1. id로 접근하기 : document.getElementById("id속성값"); <!--getElementBy 시리즈 중 유일하게 하나만 가져온다.-->
         -> 아이디가 일치하는 요소(객체)를 얻어옴
 
 
@@ -52,7 +52,7 @@
 
 
 
-    5. CSS 선택자로 접근하기
+    5. CSS 선택자로 접근하기 (CSS로 선택할 경우가 아니라면, 굳이 이 선택자를 쓸 필요가 없다)
        
         1) document.querySelector("CSS 선택자");
             -> 선택자가 선택한 요소 중 첫 번째 요소를 반환
@@ -93,53 +93,50 @@
   <hr>
 
 
+  
   <h3>name으로 요소 접근하기</h3>
 
-
   <pre>
-    name 속성은 input 또는 input 관련 태그만
-    기본 속성으로 가지고 있다
+      name 속성은 input 또는 input 관련 태그만
+      기본 속성으로 가지고 있다 
   </pre>
 
-
   <table>
-    <tr>
+      <tr>
       <td>
-        <input type="checkbox" name="hobby" id="game" value="게임">
-        <label for="game">게임</label>
+          <input type="checkbox" name="hobby" id="game" value="게임">
+          <label for="game">게임</label>
       </td>
       <td>
-        <input type="checkbox" name="hobby" id="music" value="음악감상">
-        <label for="music">음악감상</label>
+          <input type="checkbox" name="hobby" id="music" value="음악감상">
+          <label for="music">음악감상</label>
       </td>
       <td>
-        <input type="checkbox" name="hobby" id="movie" value="영화감상">
-        <label for="movie">영화감상</label>
+          <input type="checkbox" name="hobby" id="movie" value="영화감상">
+          <label for="movie">영화감상</label>
       </td>
-    </tr>
+      </tr>
 
-
-    <tr>
+      <tr>
       <td>
-        <input type="checkbox" name="hobby" id="coding" value="코딩">
-        <label for="coding">코딩</label>
+          <input type="checkbox" name="hobby" id="coding" value="코딩">
+          <label for="coding">코딩</label>
       </td>
       <td>
-        <input type="checkbox" name="hobby" id="exercise" value="운동">
-        <label for="exercise">운동</label>
+          <input type="checkbox" name="hobby" id="exercise" value="운동">
+          <label for="exercise">운동</label>
       </td>
       <td>
-        <input type="checkbox" name="hobby" id="book" value="독서">
-        <label for="book">독서</label>
+          <input type="checkbox" name="hobby" id="book" value="독서">
+          <label for="book">독서</label>
       </td>
-    </tr>
+      </tr>
   </table>
-
 
   <div id="name-div"></div>
 
-
   <button onclick="nameTest()">선택된 취미만 출력하기</button>
+
 
   <hr>
   <h3>CSS 선택자로 요소 접근하기</h3>
