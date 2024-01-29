@@ -1,0 +1,12 @@
+#user-id, #password, #duplicateCheckpassword, #name, #gender,#tel, #email{
+    display: flex;
+}
+
+.first{
+    flex-basis: 20%;
+}
+#btn-div{
+    display:flex;
+    justify-content: center;
+    margin-top: 10px;
+}

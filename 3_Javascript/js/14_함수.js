@@ -138,3 +138,74 @@ document.querySelector("#btn3a").addEventListener("click", function(){
 })
 
 
+// -----------------------------------------------------------------------------
+
+//화살표 함수
+
+//클래스가 arrow인 요소를 모두 얻어옴(배열)
+const arrowList = document.querySelectorAll(".arrow");
+
+//화살표 함수 기본 형태
+arrowList[0].addEventListener("click", () => {
+    alert("화살표 함수 기본 형태 연습");
+})
+
+//매개변수가 1개인 경우 : () 생략 가능
+function print3 (otherFn) {
+    const numbers = [1,2,3,4];
+    console.log(otherFn(numbers));    
+}
+
+arrowList[1].addEventListener("click", e => {  //매개변수가 e(이벤트 객체) 하나밖에 없기 때문에,
+                                               //소괄호 생략됨.
+    e.target.style.backgroundColor = "red"; //e.targer은 이벤트가 발생한 태그자체(여기서는 arrowList[1]임)
+
+    print3( arr => { //매개변수가 하나라서 ()생략됨
+        let result = 0;
+        for(let i=0; i<arr.length; i++){
+            result += arr[i];
+        }
+        return result;
+    });
+
+});
+
+// return 한 줄만 작성된 경우
+function towNumberPlus (otherFn) {
+    const input1 = Number(prompt("첫 번째 값"));
+    const input2 = Number(prompt("두 번째 값"));
+
+    alert(otherFn(input1, input2)); //alert 도 함수였음.
+}
+
+arrowList[2].addEventListener("click", () => { //매개변수가 0개여도 ()소괄호 생략못함.
+
+    towNumberPlus(
+        (a, b) => a + b //'return' '중괄호' ';' 까지 모두 생략되었다.
+    );
+})
+
+//return 한 줄인데 object 반환하는 경우
+function printObject(otherFn){
+    const obj = otherFn("홍길동", 20);
+    console.log(`obj.name: ${obj.name}`);
+    console.log(`obj.age: ${obj.age}`);
+}
+
+arrowList[3].addEventListener("click", () => {
+    printObject((name, age) => {
+        return {"name": name, "age" : age}; //객체를 리턴하는 경우, {} return 생략 불가능
+    })
+})
+
+
+//즉시 실행 함수
+(()=>{
+    console.log("즉시 실행 함수입니다.");
+    console.log("함수 모양이 좀 어렵죠?");
+
+})() 
+//이렇게만 써두면, 바로 호출됨. 즉, 어떤 이벤트발생하면 ~ console 찍어줘. 이렇게 해왔었는데, 
+//그렇게 안하고, 그냥 즉시 실행함수만 써두면, 아마도 document가 로드될 때 실행되는 거 같아.
+
+
