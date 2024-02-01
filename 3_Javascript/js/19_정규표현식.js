@@ -99,6 +99,5 @@ document.getElementById("inputPno").addEventListener("keyup", (e)=>{
     span.classList.remove("confirm");
     span.classList.add("error");
     }
-    
-
 })
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link rel="stylesheet" href="../css/21_게임만들기.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21_게임만들기</title>
+</head>
+<body>
+    
+<div id="container-1">미니 RPG</div>
+<div id="container-2">
+    
+    <!-- 캐릭터 생성 -->
+    <div id="inner-1">
+        <button>
+            캐릭터 생성
+        </button>
+        <div id="character-image">
+            <img src="../../images/남자_전사.png" id="man-warrior">
+            <img src="../../images/남자_마법사.png" id="man-magician">
+            <img src="../../images/여자_전사.png" id="girl-warrior">
+            <img src="../../images/여자_마법사.png" id="girl-magician">
+        </div>
+        <div id="character-info">
+            <div><span>이름 :&nbsp;</span></div>
+            <div><span>직업 :&nbsp;</span></div>
+            <div><span>성별 :&nbsp;</span></div>
+            <div><span>레벨 :&nbsp;</span></div>
+            <div><span>체력 :&nbsp;</span></div>
+            <div><span>공격력 :&nbsp;</span></div>
+            <div><span>방어력 :&nbsp;</span></div>
+            <div><span>누적경험치 :&nbsp;</span></div>
+            <div><span>골드 :&nbsp;</span></div>
+            <div><span>무기 :&nbsp;</span></div>
+            <div><span>방어구 :&nbsp;</span></div>
+        </div>
+    </div>
+    
+    <!-- 전투시작 -->
+    <div id="inner-2">
+        <button>
+             전투 시작
+        </button>
+        <div id="goblin-image-div">
+            <img src="../../images/OIP.jpg" id="goblin">
+            <img src="../../images/고블린쳐맞는거.PNG" id="goblin-be-killed">
+        </div>
+        <div id="attacked-message">
+        </div>
+        <div id="goblin-info">
+            <div>
+                <span class="golin-infomation1">체력: <span id="hundred">100</span></span>
+            </div>
+            <div>
+                <span class="golin-infomation2">공격력: 10</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 상점 -->
+    <div id="inner-3">
+        <div>~상점입니다~</div>
+        <button id="swordBtnBtn">SWORD : 100</button>
+        <button id="shieldBtnBtn">SHIELD : 100</button>
+        <button id="potionBtnBtn">POTION : 10</button>
+    </div>
+</div>
+
+    <script src="../js/21_게임만들기.js"></script>
+</body>
+</html>

@@ -45,4 +45,6 @@ clockFn(); //함수 호출
 //clearInterval()
 document.getElementById("stop").addEventListener("click", () => {
     clearInterval(interval);
+
+    // ^[a-z][a-z\d\-_]{5,13}$
 })
